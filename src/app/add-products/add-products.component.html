@@ -1,0 +1,28 @@
+<div>
+    <form #addForm="ngForm" (ngSubmit)="onAddProducts(addForm)">
+    <div class="form-group">
+       <label for="Name">ProductName</label>
+       <input type="text" ngModel name="productName" class="form-control" id="name" placeholder="productName" required>
+    </div>
+    <div class="form-group">
+       <label for="about">About</label>
+       <input type="text" ngModel name="about" class="form-control" id="about" placeholder="about" required>
+    </div>
+    <div class="form-group">
+       <label for="brand">Brand</label>
+       <input type="text" ngModel name="brand" class="form-control" id="brand" placeholder="brand" required>
+    </div>
+    <div class="form-group">
+       <label for="price">Price</label>
+       <input type="text" ngModel name="price" class="form-control" id="price" placeholder="Price" required>
+    </div>
+    <div class="form-group">
+       <label for="imageUrl">Image URL</label>
+       <input type="text" ngModel name="imageUrl" class="form-control" id="imageUrl" placeholder="Image URL" required>
+    </div>
+    <div class="modal-footer">
+       <!------<button type="submit">save changes</button>---->
+       <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary" >Save changes</button>
+    </div>
+    </form>
+ </div>

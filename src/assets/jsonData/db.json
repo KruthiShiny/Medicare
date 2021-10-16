@@ -1,0 +1,11 @@
+{
+    "AllProducts": [
+      {
+        "id": 1,
+        "title": "thermometer",
+        "price": 522,
+        "category": "device",
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.healthklin.com%2FGENX-Digital-Thermometer&psig=AOvVaw2xzuDhQ6IlcM95mbSG0zDE&ust=1633670889855000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLCS2brIt_MCFQAAAAAdAAAAABAH"
+      }
+    ]
+}

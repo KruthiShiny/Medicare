@@ -1,0 +1,46 @@
+
+   <!---<div *ngFor="let product of products" class="col-md-6 col-xl-3">
+      
+            
+               <h5>{{product.productName}}</h5>
+   </div>
+   --->
+               
+           
+      
+<div class="container" id="main-container">
+<div class="row">
+  <div *ngFor="let product of products" class="col-md-3 col-xl-5" >
+     <div class="B">
+   <div class="card m-b-10">
+      <div class="card-body row">
+         <div class="col-3">
+              <a href=""><img src="{{product?.imageUrl}}" alt="" class="img-fluid rounded-circle w-60" ></a>
+         </div>
+         <div class="col-6 card-title align-self-center mb-0">
+              <h5>{{product.productName}}</h5>
+              <p class="m-0">{{product?.about}}</p>
+              </div>
+              </div>
+        <ul class="list-group list-group-flush">
+           <li class="list-group-item">{{product?.brand}}</li>
+           <li class="list-group-item">Price : {{product?.price}}</li>
+        </ul>
+        <div class="card-body">
+         <div class="float-right btn-group btn-group-sm">
+        <button class="btn btn-primary" (click)=addtoCart(product)>Add to cart</button>
+        </div>
+        </div>
+        </div>
+        </div>
+  </div>
+ </div>
+ 
+     
+<!---<div *ngIf="products?.length == 0" class="col-lg-12 col-md-12 col-xl-12">
+   <div class="alert alert-info" role="alert">
+     <h4 class="alert-heading">NO Products</h4>
+     <p>No Products admin should handel.</p>
+   </div>
+   </div>
+--->
